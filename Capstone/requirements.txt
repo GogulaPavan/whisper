@@ -1,0 +1,7 @@
+streamlit
+whisper
+moviepy
+numpy
+tqdm
+imageio
+imageio-ffmpeg
