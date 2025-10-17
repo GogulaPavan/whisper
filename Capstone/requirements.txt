@@ -1,7 +1,6 @@
+git+https://github.com/openai/whisper.git
+moviepy==2.2.1
 streamlit
-whisper
-moviepy
+imageio-ffmpeg
 numpy
 tqdm
-imageio
-imageio-ffmpeg
