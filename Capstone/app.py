@@ -1,6 +1,6 @@
 import streamlit as st
 import whisper
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 import tempfile
 import os
 import subprocess
@@ -62,3 +62,4 @@ if uploaded_file:
     video.close()
     os.remove(video_path)
     os.remove(audio_path)
+
