@@ -1,6 +1,6 @@
 import streamlit as st
 import whisper
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 import tempfile
 import os
 import subprocess
@@ -67,4 +67,5 @@ if uploaded_file is not None:
     # Clean up temporary files
     video.close()  # Explicitly close the video file
     os.remove(video_path)  # Delete the video file after closing it
+
     os.remove(audio_path)  # Delete the audio file
