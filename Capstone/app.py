@@ -6,6 +6,9 @@ import os
 import subprocess
 import imageio_ffmpeg as ffmpeg
 
+# Ensure Whisper finds ffmpeg
+os.environ["FFMPEG_BINARY"] = ffmpeg.get_ffmpeg_exe()
+
 # Load Whisper model
 model = whisper.load_model("small")
 
